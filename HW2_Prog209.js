@@ -10,6 +10,8 @@ function formSumbit(Register)
    let Password = document.getElementById("Password").value;
    let City = document.getElementById("City").value;
    let State = document.getElementById("State").value;
+   document.getElementById("NorE").disabled = true; 
+
 
    if (userName.length > 2 && Password.length > 2 && City.length > 2 && State.length > 1)
    {
@@ -22,6 +24,8 @@ function formSumbit1(LogIn)
    document.getElementById("ExistingUser").disabled = false;
    let Username = document.getElementById("Username").value;
    let Password1 = document.getElementById("Password1").value;  
+   document.getElementById("NorE").disabled = true; 
+
    
    if (Username.length > 2 && Password1.length > 2)
    {
